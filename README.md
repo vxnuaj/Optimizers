@@ -82,12 +82,6 @@ $v_t = (1 - \beta)\frac{∂L}{∂\theta}$
 
 $\theta = \theta - \alpha v_t$
 
-<br/>
-<div align = 'center'>
-<img src = 'img/nesterov.png' width = 500>
-</div>
-<br/>
-
 Rather than coupling together the gradient update with the velocity term, we *decouple* their influence into 2 steps.
 
 First we update the parameters $\theta$, to $\hat{\theta}$, an interim update, and then compute the the gradient with respect to the loss function $L$. 
@@ -106,11 +100,6 @@ Using $1 - \gamma$ instead of the original $(1 - \beta)$
 
 > [NumPy Implementation](implementations/03-np-adagrad.py)
 > [PyTorch Implementation](implementations/03-pytorch-adagrad.py)
-
-<br/>
-<img width = 100% src = 'img/ada.png'>
-<br/>
-<br/>
 
 Adagrad introduces the concept of an adaptive learning rate, adapting the learning rate for each feature, assigning a higher learning rate for infrequent features and lower learning rates for frequent features, based on the accumulated squared gradients.
 
