@@ -1,3 +1,5 @@
+<img src = loss.png>
+
 # Optimizers
 
 Here, I talk about common optimizers for neural networks, and the different properties they hold.
